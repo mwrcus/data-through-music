@@ -128,7 +128,7 @@ img{
 }
 
 #authorizeButton:hover, .loadingLink:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 
@@ -226,6 +226,15 @@ img{
     gap: 10vh;
 }
 
+#loading3{
+    padding-top: 45vh;
+    padding-bottom: 45vh;
+    display: flex;
+/*    white-space: nowrap;*/
+    flex-direction: column;
+    gap: 10vh;
+}
+
 .loadingLink{
     padding: 2vh;
     background-color: #1A628A;
@@ -270,4 +279,18 @@ img{
 
 #specialBox{
     min-width: 60%;
+    border: 2px solid #1A628A;
 }
+
+#specialBox h4{
+    color: #1A628A;
+}
+
+#specificBox2{
+    border: 2px solid #1A628A;
+}
+
+#specificBox2 h4{
+    color: #1A628A;
+}
+

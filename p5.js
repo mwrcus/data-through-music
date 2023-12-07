@@ -2,6 +2,7 @@ let t;
 let song;
 
 function preload(){
+  // soundFormats('mp3');
   // song = loadSound('/c418.mp3');
 }
 
@@ -15,44 +16,14 @@ function setup() {
   t = 0;
 
   //sound
-  // song.setVolume(0.1);
+  // song.setVolume(0.5);
   // song.play();
   // song.loop();
 
 }
 
-// function draw() {
-//   frameRate(48);
-
-//   let scale_factor = 10000;
-//   let detail = 0.001;
-
-//   for (let i = 0; i < 2; i++) {
-//     let x = width * noise(t + 11045 * scale_factor);
-//     let y = height * noise(t + 51025 * scale_factor);
-
-//     let amplitude = map(sin(t), -1, 1, 50, 200); // Amplitude of the sine wave
-//     let frequency = map(sin(t + 0.5), -1, 1, 0.01, 0.1); // Frequency of the sine wave
-
-//     let r = map(noise(t), 0, 1, 150, 255);
-//     let g = map(noise(t + 10), 0, 1, 0, 100);
-//     let b = map(noise(t + 20), 0, 1, 100, 255);
-
-//     stroke(r, g, b, 10);
-
-//     // Draw sine wave
-//     beginShape();
-//     for (let angle = 0; angle < TWO_PI; angle += 0.1) {
-//       let wave = amplitude * sin(frequency * angle);
-//       vertex(x + angle * 50, y + wave);
-//     }
-//     endShape();
-
-//     t += detail;
-//   }
-// }
-
- function draw() {
+// background
+function draw() {
   frameRate(48);
   let scale_factor = 900;
   let detail = 0.001;
