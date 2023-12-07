@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Through Music</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    
+
+</head>
+<body>
+
+    <div class="entire">
+
+
+        <div class="loading">
+
+                <div id="typed-strings">
+                    <p>Understanding your habits...</p>
+                    <p>Stalking your profile...</p>
+                    <p>Indexing your data...</p>
+                    <p>Retrieving the information in real time...<p>
+                    <p>Adding to algorithm for future training purposes...<p>
+                    <a>Scroll to see what what was uncovered from your Spotify listening activity!<p>
+                </div>
+            <span id="typed"></span>
+
+        </div>
+
+        <div data-aos="fade-right" data-aos-duration="3000" data-aos-mirror='true' data-aos-offset="300" class='listeningTime' >
+            <h2>YOUR LISTENING TIME</h2>
+            <h3 id="">0 MINUTES*</h3>
+            <p>*worth of terms and conditions</p>
+        
+        </div>
+
+        <div data-aos="fade-left" data-aos-duration="3000" data-aos-mirror='true' data-aos-offset="300" class="topArtists" >
+            <div class="heightArtists">
+                <h2>YOUR TOP ARTISTS</h2>
+                <div class="topArtistsFlex">
+                    <div class="artistName">
+                        <img src="https://i.imgur.com/aTwWZaz.png"></img>
+                        <h4>Acxiom Corporation</h4>
+                    </div>
+                    <div class="artistName">
+                        <img src="https://i.imgur.com/EsQdydq.png"></img>
+                        <h4>Nielsen</h4>
+                    </div>
+                    <div class="artistName">
+                        <img src="https://i.imgur.com/zUTGuDh.png"></img>
+                        <h4>Experian</h4>
+                    </div>
+                    <div class="artistName">
+                        <img src="https://i.imgur.com/c7D36u1.png"></img>
+                        <h4>Oracle Data Cloud</h4>
+                    </div>
+                    <div class="artistName">
+                        <img src="https://i.imgur.com/8rbE8SY.png"></img>
+                        <h4>Palantir Technologies</h4>
+                    </div>
+
+                </div>
+                <p>You really seem to enjoy spending your time with these artists (and so do they with you)!</p>
+            </div>
+
+            <div data-aos="fade-right" data-aos-duration="3000" data-aos-mirror='true' data-aos-offset="300"  class="topGenres">
+                <h2>YOUR TOP GENRE</h2>
+                <h3>TARGETED ADS</h3>
+                <p>Based on your activity, this one really stuck out the most. </p>
+            </div>
+
+            <div data-aos="fade-left" data-aos-duration="3000" data-aos-mirror='true' data-aos-offset="300" class="topSong">
+                <h2>YOUR NEXT SONG ON REPEAT</h2>
+                <div class="">
+                    <div class="songName">
+                        <img src="https://i.imgur.com/fDryAEt.png"></img>
+                        <h4>Be Careful (Invasion of Privacy) - Firewall B</h4>
+                    </div>
+                <p>Our algorithms tell us that this coming year, you'll be wanting to hear this one more.</p>
+            </div>
+
+        </div>
+
+        <div class="loading" id="loading2">
+
+                <p>Thoughts?</p>
+
+                <div id="typed-strings2">
+                    <p>Privacy is important anywhere. But that's not to say that Spotify isn't already tracking more than I can access (remember that you authorized authentication)... think about the internet as a whole!</p>
+                </div>
+            <span id="typed2"></span>
+            <div class="loadingLink">
+                <a href='faq.html'>FAQ</a>
+            </div>
+
+        </div>
+
+    </div>
+
+        
+    <script src="script.js"></script>
+
+    <!-- aos animation library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- typed text library-->
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    typeSpeed: '7',
+    backSpeed: '8',
+    backDelay: '2000',
+  });
+  var typed = new Typed('#typed2', {
+    stringsElement: '#typed-strings2',
+    typeSpeed: '7',
+    backSpeed: '8',
+    backDelay: '2000',
+  });
+</script>
+
+</body>
+</html>

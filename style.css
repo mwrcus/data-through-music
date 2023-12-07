@@ -1,0 +1,272 @@
+@font-face {
+  font-family: 'Neue Machina Light';
+  src: url('font/NeueMachina-Light.woff') format('woff'),
+        url('font/NeueMachina-Regular.woff') format('woff'),
+        url('font/NeueMachina-UltraBold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('font/NeueMachina-Regular.woff') format('woff'),
+}
+@font-face {
+  font-family: 'Neue Machina Bold';
+  src: url('font/NeueMachina-UltraBold.woff') format('woff');
+}
+
+/*MAIN MENU-----------------------------------*/
+
+body {
+    font-family: Neue Machina;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #0A0A0A;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    border-radius: 5px;
+}
+
+
+#indexBackground {
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: -1;
+}
+
+
+
+.content {
+    height: 90vh;
+    top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    margin: 5vh;
+}
+
+
+.title {
+    text-align: left;
+    color: #237267;
+    font-size: 18vmin;
+    width: 100%;
+    line-height: 1.2em;
+    white-space: nowrap; /* Prevent text from wrapping to a new line */
+
+}
+
+@media (max-width: 500px){
+    .title {
+        font-size: 11vmin;
+}
+}
+
+
+#title1{
+    font-family: Neue Machina Bold;
+    font-size: 50%;
+    letter-spacing: 3px;
+    overflow: hidden;
+}
+
+#title2{
+    color: #1A628A;
+    font-family: Neue Machina;
+    animation: fade 10s ease-in-out infinite;
+}
+
+@keyframes fade {
+      0% {
+/*        opacity: 1;*/
+      }
+      50% {
+/*        letter-spacing: 10px;*/
+/*        font-size: 210%;*/
+/*        opacity: 1;*/
+      }
+      100% {
+/*        opacity: 1;*/
+      }
+}
+    
+.title h1 {
+    margin: 0; 
+    padding: 0; 
+}
+
+#authorizeButton{
+
+    font-family: Neue Machina;
+    background-color: #237267;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: black;
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration-thickness: auto;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+#authorizeButton:hover, .loadingLink:hover {
+  transform: scale(1.05);
+}
+
+
+/*INFORMATION PAGE--------------------------------------------*/
+
+.entire {
+    overflow: initial;
+    color: white;
+    margin: 0;
+    top: 0;
+    right: 0;
+    padding-top: 2vmin;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.topArtistsFlex{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+/*.songName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}*/
+
+.topSong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.songName img{
+    height: 50vmin;
+    width: 50vmin;
+    border: 2px solid white;
+}
+
+.topArtistsFlex img{
+    height: 25vmin;
+    width: 25vmin;
+    border: 2px solid white;
+}
+
+.entire h2{
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid #1A628A;
+    padding: 2vh;
+}
+
+.entire h3{
+    text-align: center;
+    font-size: 10vmax;
+}
+
+
+.loading{
+    padding-top: 48vh;
+    padding-bottom: 48vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.listeningTime, .heightArtists, .topGenres, .topSong{
+/*    padding-top: 45vh;*/
+    padding-bottom: 20vh;
+}
+
+#loading2{
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    display: flex;
+/*    white-space: nowrap;*/
+    flex-direction: column;
+    gap: 10vh;
+}
+
+.loadingLink{
+    padding: 2vh;
+    background-color: #1A628A;
+/*    border: 2px solid pink;*/
+    border-radius: 10px;
+    color: white;
+    transition: transform 1s;
+}
+
+.loadingLink a{
+    color: black;
+}
+
+/*FAQ PAGE-----------------*/
+
+.boxCollection {
+    margin-top: 3vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4vh;
+    width: 100%;
+    padding-bottom: 5vh;
+}
+
+.specificBox {
+    flex: 1;
+    min-width: 40%;
+/*    min-height: 50%;*/
+    box-sizing: border-box;
+    height: auto;
+    padding: 2vh;
+    border-radius: 15px;
+    border: 2px solid #237267;
+    line-height: 2em;
+}
+
+.specificBox h4{
+    color: #237267;
+    font-family: Neue Machina Bold;
+}
+
+#specialBox{
+    min-width: 60%;
+}
