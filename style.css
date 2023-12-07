@@ -1,17 +1,16 @@
 @font-face {
   font-family: 'Neue Machina Light';
-  src: url('font/NeueMachina-Light.woff') format('woff'),
-        url('font/NeueMachina-Regular.woff') format('woff'),
-        url('font/NeueMachina-UltraBold.woff') format('woff');
+  src: url('font/NeueMachina-Light.woff') format('woff');
 }
 @font-face {
   font-family: 'Neue Machina';
-  src: url('font/NeueMachina-Regular.woff') format('woff'),
+  src: url('font/NeueMachina-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Neue Machina Bold';
-  src: url('font/NeueMachina-UltraBold.woff') format('woff');
+  src: url('font/NeueMachina-Ultrabold.woff') format('woff');
 }
+
 
 /*MAIN MENU-----------------------------------*/
 
@@ -78,7 +77,7 @@ img{
 
 
 #title1{
-    font-family: Neue Machina Bold;
+    font-family: 'Neue Machina Bold';
     font-size: 50%;
     letter-spacing: 3px;
     overflow: hidden;
@@ -86,7 +85,7 @@ img{
 
 #title2{
     color: #1A628A;
-    font-family: Neue Machina;
+    font-family: 'Neue Machina';
     animation: fade 10s ease-in-out infinite;
 }
 
@@ -111,7 +110,7 @@ img{
 
 #authorizeButton{
 
-    font-family: Neue Machina;
+    font-family: 'Neue Machina';
     background-color: #237267;
     border: 0;
     border-radius: .5rem;
@@ -157,7 +156,8 @@ img{
     width: 100%;
     margin-top: 20vh;
     margin-bottom: 10vh;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 4vmax;
     align-items: center;
     align-content: center;
 }
@@ -198,6 +198,7 @@ img{
 .entire h3{
     text-align: center;
     font-size: 10vmax;
+    font-family: 'Neue Machina Bold';
 }
 
 
