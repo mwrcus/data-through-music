@@ -294,3 +294,55 @@ img{
     color: #1A628A;
 }
 
+
+/*MOBILE QUERY*/
+@media (max-width: 480px){
+    .loading{
+        font-size: 4vmin;
+    }
+    .entire{
+/*        overflow-x: hidden;*/
+        padding: 7vw;
+/*        width: 100%;*/
+    }
+    .entire h3{
+        font-size: 13vmin;
+    }
+    .topArtistsFlex{
+        flex-direction: column;
+/*        transform: scale(1.2);*/
+    }
+    .specificBox, #specificBox2, .specialBox {
+        min-width: 100%;
+    }
+    .topArtistsFlex img{
+        width: 50vw;
+        height: auto;
+    }
+
+    .listeningTime, .heightArtists, .topGenres, .topSong{
+    padding-bottom: 20vh;
+    overflow-x: hidden;
+    }
+    .topSong{
+        flex-direction: column;
+        width: 100%;
+    }
+    .entire h2{
+        font-size: 4vmin;
+        margin-bottom: 20vh;
+/*        width: 100%;*/
+    }
+    .topSong h2{
+        width: 88%;
+    }
+
+    .topSong p{
+        margin-top: 10vh;
+    }
+
+    #myChart{
+        margin-bottom: 20vh;
+    }
+
+}
